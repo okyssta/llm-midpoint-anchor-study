@@ -1,0 +1,32 @@
+name: analysis
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # No model weights, no GPU, no third-party packages: the analysis path is standard library only.
+      - name: Statistical regression tests
+        run: python3 code/test_stats_paired.py
+
+      - name: Validate analysis from saved predictions
+        run: python3 code/check_analysis.py
+
+      - name: Verify checksum manifest
+        run: python3 code/make_manifest.py verify

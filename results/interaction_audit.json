@@ -1,0 +1,260 @@
+{
+ "definition": "(bwd_base - fwd_base) - (bwd_para - fwd_para), per item",
+ "n": 24,
+ "estimate": -0.5416666666666666,
+ "lo": -0.7916666666666666,
+ "hi": -0.3333333333333333,
+ "n_boot": 10000,
+ "n_perm": 100000,
+ "seed": 0,
+ "p_exact": 0.00048828125,
+ "exact_extreme": 2,
+ "exact_assignments": 4096,
+ "n_nonzero": 12,
+ "p_perm": 0.00047999520004799953,
+ "ge": 47,
+ "eff_base": -0.375,
+ "eff_para": 0.16666666666666666,
+ "terms": [
+  {
+   "item_id": 0,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 1,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 2,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 1,
+   "eff_base": 0,
+   "eff_para": 1,
+   "interaction": -1
+  },
+  {
+   "item_id": 3,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": -1,
+   "eff_para": 0,
+   "interaction": -1
+  },
+  {
+   "item_id": 4,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 1,
+   "eff_base": 0,
+   "eff_para": 1,
+   "interaction": -1
+  },
+  {
+   "item_id": 5,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 1,
+   "bwd_para": 0,
+   "eff_base": -1,
+   "eff_para": -1,
+   "interaction": 0
+  },
+  {
+   "item_id": 6,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": -1,
+   "eff_para": 0,
+   "interaction": -1
+  },
+  {
+   "item_id": 7,
+   "fwd_base": 1,
+   "bwd_base": 1,
+   "fwd_para": 0,
+   "bwd_para": 1,
+   "eff_base": 0,
+   "eff_para": 1,
+   "interaction": -1
+  },
+  {
+   "item_id": 8,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 9,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 10,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 11,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": -1,
+   "eff_para": 0,
+   "interaction": -1
+  },
+  {
+   "item_id": 12,
+   "fwd_base": 1,
+   "bwd_base": 1,
+   "fwd_para": 1,
+   "bwd_para": 1,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 13,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 1,
+   "eff_base": 0,
+   "eff_para": 1,
+   "interaction": -1
+  },
+  {
+   "item_id": 14,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 15,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": -1,
+   "eff_para": 0,
+   "interaction": -1
+  },
+  {
+   "item_id": 16,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 17,
+   "fwd_base": 0,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 18,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 0,
+   "eff_base": -1,
+   "eff_para": 0,
+   "interaction": -1
+  },
+  {
+   "item_id": 19,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 1,
+   "bwd_para": 1,
+   "eff_base": -1,
+   "eff_para": 0,
+   "interaction": -1
+  },
+  {
+   "item_id": 20,
+   "fwd_base": 1,
+   "bwd_base": 1,
+   "fwd_para": 0,
+   "bwd_para": 1,
+   "eff_base": 0,
+   "eff_para": 1,
+   "interaction": -1
+  },
+  {
+   "item_id": 21,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 1,
+   "bwd_para": 0,
+   "eff_base": -1,
+   "eff_para": -1,
+   "interaction": 0
+  },
+  {
+   "item_id": 22,
+   "fwd_base": 1,
+   "bwd_base": 1,
+   "fwd_para": 1,
+   "bwd_para": 1,
+   "eff_base": 0,
+   "eff_para": 0,
+   "interaction": 0
+  },
+  {
+   "item_id": 23,
+   "fwd_base": 1,
+   "bwd_base": 0,
+   "fwd_para": 0,
+   "bwd_para": 1,
+   "eff_base": -1,
+   "eff_para": 1,
+   "interaction": -2
+  }
+ ]
+}

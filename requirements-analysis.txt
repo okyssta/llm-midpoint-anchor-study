@@ -1,0 +1,3 @@
+# Analysis path: no third-party packages required.
+# The statistics, assembly and tests import only the Python standard library (3.10+).
+# statsmodels was used only to inspect the reference implementation; see ENVIRONMENT.md.

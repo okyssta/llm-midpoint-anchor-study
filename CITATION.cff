@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you refer to this work, please cite it using the metadata below."
+title: "Changing One Word: a paired test of anchor direction in list indexing"
+version: "6.0"
+date-released: 2026-10-27
+type: software
+authors:
+  - name: "Kyssta"
+    alias: "okyssta"
+abstract: >-
+  A paired midpoint analysis of anchor direction in list indexing: for odd-length lists, the
+  backward and forward phrasings name the same item at the same ordinal, so only the anchor word
+  differs. On Qwen2.5-1.5B-Instruct the backward wording reduces accuracy by 33-38 percentage
+  points (95% CI excluding zero, not clearing a 15-point practical margin), and the estimated anchor
+  effect differs between the two question templates tested (interaction -54.17 points, exact
+  p = 2/4096). The direction asymmetry itself and prompt sensitivity in general are prior results.
+  Small exploratory study: one model family, one position, 24 items per cell, uncorrected
+  comparisons. No priority claim is made.
+keywords:
+  - large language models
+  - positional retrieval
+  - list indexing
+  - prompt sensitivity
+  - paired analysis
+repository-code: "https://github.com/okyssta/llm-midpoint-anchor-study"
