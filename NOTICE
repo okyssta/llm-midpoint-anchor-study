@@ -1,0 +1,46 @@
+NOTICE
+
+Third-party components and rights relevant to this repository.
+
+This repository contains no vendored third-party source code, no model weights and no third-party
+datasets. The two PDFs in paper/ were produced by the authors; prior work is cited, not reproduced.
+
+--------------------------------------------------------------------------------
+Models used to produce raw/ (not included)
+--------------------------------------------------------------------------------
+
+Qwen2.5-1.5B-Instruct and Qwen2.5-0.5B-Instruct (Alibaba Cloud / Qwen team), Apache License 2.0,
+verified from the model cards at huggingface.co on 2026-10-27. Weights are not distributed here;
+they are downloaded at inference time from their canonical repositories. The prediction records in
+raw/ are outputs produced by running these models.
+
+--------------------------------------------------------------------------------
+Runtime dependencies (installed at inference time, not vendored)
+--------------------------------------------------------------------------------
+
+License identifiers are as recorded in the installed package metadata on the preparation host:
+
+  PyTorch 2.14.1        Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND
+                        BSD-3-Clause AND BSL-1.0 AND MIT
+  Transformers 5.16.1   Apache 2.0 License
+  NumPy 2.5.4           BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0
+
+Each dependency remains under its own terms. Nothing in this repository's licenses alters those
+terms, and nothing here grants rights to those packages. The analysis path imports only the Python
+standard library, so verifying the reported numbers requires none of them.
+
+--------------------------------------------------------------------------------
+Copyright in this repository
+--------------------------------------------------------------------------------
+
+Copyright (c) 2026 Muhammad Ammar Imran.
+
+  code/**, .github/**, requirements-analysis.txt, requirements-model.txt   MIT (see LICENSE)
+  paper/**, docs/**, raw/**, results/**, README.md, CITATION.cff, SHA256SUMS
+                                                                          CC BY 4.0 (see LICENSE-CC-BY-4.0)
+
+No other copyright holders were identified in the source material. If you believe you hold rights in
+any file here, contact the repository owner.
+
+LICENSE and LICENSE-CC-BY-4.0 are the unmodified license texts. They are reproduced for compliance
+and are not themselves licensed by the above grant.

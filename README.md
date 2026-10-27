@@ -138,6 +138,9 @@ audit's search-limitations section (`paper/novelty_audit.md` §4).
 ```
 README.md                  this file
 CITATION.cff               citation metadata (no DOI, no venue)
+LICENSE                    MIT — original code, scripts, software configuration
+LICENSE-CC-BY-4.0          CC BY 4.0 — paper, audit, docs, research data
+NOTICE                     third-party components and copyright scope
 requirements-analysis.txt  analysis path (standard library only)
 requirements-model.txt     inference pins
 paper/
@@ -184,11 +187,11 @@ cd llm-midpoint-anchor-study
 
 python3 code/test_stats_paired.py    # 26 checks, exits nonzero on failure
 python3 code/check_analysis.py       # recomputes every cell + interaction, compares at 1e-9
-python3 code/make_manifest.py verify # 35 checksum entries
+python3 code/make_manifest.py verify # 38 checksum entries
 ```
 
 Expected: `ALL PASS`; `PASS — regenerated results match the committed records` with worst deviation
-`0.000e+00`; `35 entries checked: OK`.
+`0.000e+00`; `38 entries checked: OK`.
 
 `check_analysis.py` copies the repository to a temporary directory and runs the pipeline there, so the
 committed `results/` and `paper/` files are never modified.
@@ -247,14 +250,56 @@ host in October 2026 and is recorded in `raw/`. Model snapshots and precision ar
 
 ## Citation
 
-`CITATION.cff` holds the title, version and date. It deliberately omits a surname, affiliation, DOI and
-venue: none is known, and none is invented. Cite as:
+`CITATION.cff` holds the title, author, version and date. The scholarly citation is:
 
-> Kyssta. *Changing One Word: a paired test of anchor direction in list indexing.* Version 6, 2026.
-> https://github.com/okyssta/llm-midpoint-anchor-study
+> Imran, Muhammad Ammar. *Changing One Word: a paired test of anchor direction in list indexing.*
+> Version 6, 2026. https://github.com/okyssta/llm-midpoint-anchor-study
+
+No DOI, venue or affiliation is given, because none exists: the manuscript is unpublished and has not
+been peer reviewed.
+
+### Citation vs. license
+
+Citing the work is a scholarly norm; the licenses are the legal terms, and they differ in what they
+require. MIT requires the copyright and permission notices to travel with copies of the code. CC BY 4.0
+requires attribution, a link to the license, and an indication of changes if you modify the material.
+Citing the paper supplies the attribution CC BY asks for, but the citation file is a request, not a
+condition of use — the licenses define what you may do.
+
+Suggested attribution for the CC BY 4.0 material:
+
+> Imran, Muhammad Ammar. *Changing One Word: a paired test of anchor direction in list indexing*,
+> version 6 (2026). CC BY 4.0. https://github.com/okyssta/llm-midpoint-anchor-study
 
 ## License
 
-**No license has been assigned.** The originating study carried no license file, and none is added
-here: adding one would silently relicense the paper, the code and the data. All rights are reserved by
-default. If you need to reuse this material, contact the repository owner for terms.
+Two licenses, split by material type. The split matters: MIT applied to the whole repository would
+suggest the paper, audit and data are MIT-licensed, and they are not. Both license texts are included
+unmodified.
+
+Copyright (c) 2026 Muhammad Ammar Imran.
+
+| path | license |
+|---|---|
+| `code/**` | **MIT** — [`LICENSE`](LICENSE) |
+| `.gitignore` | **MIT** (software configuration) |
+| `.github/workflows/analysis.yml` | **MIT** (software configuration) |
+| `requirements-analysis.txt`, `requirements-model.txt` | **MIT** (software configuration) |
+| `paper/**` (both PDFs and both markdown sources) | **CC BY 4.0** — [`LICENSE-CC-BY-4.0`](LICENSE-CC-BY-4.0) |
+| `docs/**` (environment, reproducibility, audit, correction log, evidence) | **CC BY 4.0** |
+| `raw/**` (item-level prediction records) | **CC BY 4.0** (research data) |
+| `results/**` (aggregates, interaction audit, per-item indicators) | **CC BY 4.0** (research data) |
+| `README.md`, `CITATION.cff`, `NOTICE` | **CC BY 4.0** (documentation and metadata) |
+| `SHA256SUMS` | **CC BY 4.0** (data) |
+| `LICENSE`, `LICENSE-CC-BY-4.0` | the unmodified license texts; not themselves licensed by this grant |
+
+Scope notes:
+
+- The PDFs in `paper/` are frozen artifacts. The licenses apply to them as distributed; adding this
+  licensing information did not regenerate or alter either PDF.
+- `LICENSE-CC-BY-4.0` is the verbatim legal code from creativecommons.org (396 lines, all eight
+  sections, byte-identical as fetched on 2026-10-27). No copyright line was inserted into it, because
+  that would modify the text.
+- Third-party components — the Qwen models that produced `raw/`, and the runtime dependencies — are
+  not vendored and remain under their own licenses. See [`NOTICE`](NOTICE) for the verified
+  identifiers and provenance.
